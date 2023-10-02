@@ -1,0 +1,9 @@
+# Data Transformation
+
+
+1. Config.yaml
+2. config entity
+3. Configuration
+4. Compontents folder under our data transformation file
+5. Helper function under our utils file
+

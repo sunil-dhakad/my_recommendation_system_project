@@ -1,0 +1,34 @@
+[2023-08-18 22:18:03,845] root - INFO - ====================Data Ingestion log started.==================== 
+[2023-08-18 22:18:03,845] root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_dir='artifacts\\dataset\\ingested_data')
+[2023-08-18 22:18:03,845] root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2023-08-18 22:18:03,846] root - INFO - Data Transformation Config: DataTransformationConfig(transformed_data_dir='artifacts\\dataset\\transformed_data', clean_data_file_path='artifacts\\dataset\\clean_data\\clean_data.csv')
+[2023-08-18 22:18:03,846] root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2023-08-18 22:18:03,846] root - INFO - Model Trainer Config: ModelTrainerCionfig(transformed_data_file_dir='artifacts\\dataset\\transformed_data\\transformed_data.pkl', trained_model_dir='artifacts\\trained_model', trained_model_name='model.pkl')
+[2023-08-18 22:18:03,846] root - INFO - Downloading data from https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip into file artifacts\dataset\raw_data\books_data.zip
+[2023-08-18 22:18:10,700] root - INFO - Downloaded data from https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip into file artifacts\dataset\raw_data\books_data.zip
+[2023-08-18 22:18:13,932] root - INFO - Extracting zip file: artifacts\dataset\raw_data\books_data.zip into dir: artifacts\dataset\ingested_data
+[2023-08-18 22:18:13,933] root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[2023-08-18 22:18:13,933] root - INFO - ====================Data Validation log started.==================== 
+[2023-08-18 22:18:19,999] root - INFO -  Shape of ratings data file: (1149780, 3)
+[2023-08-18 22:18:20,000] root - INFO -  Shape of books data file: (271360, 8)
+[2023-08-18 22:18:21,879] root - INFO -  Shape of the final clean dataset: (59850, 9)
+[2023-08-18 22:18:22,458] root - INFO - Saved cleaned data to artifacts\dataset\clean_data
+[2023-08-18 22:18:22,515] root - INFO - Saved final_rating serialization object to artifacts\serialized_objects
+[2023-08-18 22:18:22,760] root - INFO - ====================Data Validation log completed.==================== 
+
+
+[2023-08-18 22:18:22,760] root - INFO - ====================Data Transformation log started.==================== 
+[2023-08-18 22:18:23,430] root - INFO -  Shape of book pivot table: (742, 888)
+[2023-08-18 22:18:23,453] root - INFO - Saved pivot table data to artifacts\dataset\transformed_data
+[2023-08-18 22:18:23,455] root - INFO - Saved book_names serialization object to artifacts\serialized_objects
+[2023-08-18 22:18:23,477] root - INFO - Saved book_pivot serialization object to artifacts\serialized_objects
+[2023-08-18 22:18:23,481] root - INFO - ====================Data Transformation log completed.==================== 
+
+
+[2023-08-18 22:18:23,481] root - INFO - ====================Model Trainer log started.==================== 
+[2023-08-18 22:18:23,582] root - INFO - Saving final model to artifacts\trained_model\model.pkl
+[2023-08-18 22:18:23,584] root - INFO - ====================Model Trainer log completed.==================== 
+
+

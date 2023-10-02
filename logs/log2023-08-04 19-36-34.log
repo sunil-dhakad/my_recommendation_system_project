@@ -1,0 +1,18 @@
+[2023-08-04 19:36:35,030] root - INFO - ====================Data Ingestion log started.==================== 
+[2023-08-04 19:36:35,030] root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_dir='artifacts\\dataset\\ingested_data')
+[2023-08-04 19:36:35,031] root - INFO - Downloading data from https://github.com/Shivan118/Main-Branching/raw/main/books_data.zip into file artifacts\dataset\raw_data\books_data.zip
+[2023-08-04 19:37:17,953] root - ERROR - 
+        Error occurred in execution of :
+        [C:\Users\shiva\Pictures\Recommendation system\project_template\src\components\data_ingestion.py] at
+        try block line number : [62]
+        and exception block line number : [66]
+        error message : [
+        Error occurred in execution of :
+        [C:\Users\shiva\Pictures\Recommendation system\project_template\src\components\data_ingestion.py] at
+        try block line number : [36]
+        and exception block line number : [41]
+        error message : [<urlopen error [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond>]
+        
+        ]
+        
+        
